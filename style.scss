@@ -1,0 +1,56 @@
+
+
+$primary: #194538;
+$secondary: #FF942E;
+
+
+html {
+    scroll-behavior: smooth;	
+}
+
+//Navbar
+
+.navbar{
+	background-color:rgba(4,32,24,0.80);
+	border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+	backdrop-filter: blur(4px);
+}
+
+.navbar-brand img {
+    height: 50px;
+}
+
+.navbar .nav-link {
+    color: rgba(255,255,255,0.75);
+}
+
+
+
+//Dropdown
+
+$dropdown-bg: rgba(4,32,24,0.8);
+.dropdown:hover>.dropdown-menu{
+    display: block;
+}
+
+.dropdown>.dropdown-toggle:active{
+    /*Without this, clicking will make it sticky*/
+      pointer-events: none;
+  }
+
+.dropdown-menu{
+	backdrop-filter: blur(4px)!important;
+}
+
+.dropdown-item.active{
+	background-color: unset;
+	color: $secondary !important;
+}
+
+//Buttons
+
+.btn {
+	text-transform: unset;
+}
+
+@import "mdb-ui-kit/src/mdb/scss/mdb.pro.scss";

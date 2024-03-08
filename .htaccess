@@ -1,0 +1,116 @@
+RewriteEngine On
+# Browser Caching
+<IfModule mod_expires.c>
+	ExpiresActive On
+	ExpiresByType image/gif "access plus 1 months"
+	ExpiresByType image/ico "access plus 1 months"
+	ExpiresByType image/jpeg "access plus 1 months"
+	ExpiresByType image/jpg "access plus 1 months"
+	ExpiresByType image/png "access plus 1 months"
+	ExpiresByType image/webp "access plus 1 months"
+	ExpiresByType image/jp2 "access plus 1 months"
+	ExpiresByType text/css "access plus 1 months"
+	ExpiresByType text/javascript "access plus 1 months"
+	ExpiresByType application/x-javascript "access plus 1 months"
+	ExpiresByType application/javascript "access plus 1 months"
+</IfModule>
+# Gzip Compression
+<IfModule mod_deflate.c>
+	AddOutputFilterByType DEFLATE application/javascript
+	AddOutputFilterByType DEFLATE application/rss+xml
+	AddOutputFilterByType DEFLATE application/vnd.ms-fontobject
+	AddOutputFilterByType DEFLATE application/x-font
+	AddOutputFilterByType DEFLATE application/x-font-opentype
+	AddOutputFilterByType DEFLATE application/x-font-otf
+	AddOutputFilterByType DEFLATE application/x-font-truetype
+	AddOutputFilterByType DEFLATE application/x-font-ttf
+	AddOutputFilterByType DEFLATE application/x-javascript
+	AddOutputFilterByType DEFLATE application/xhtml+xml
+	AddOutputFilterByType DEFLATE application/xml
+	AddOutputFilterByType DEFLATE font/opentype
+	AddOutputFilterByType DEFLATE font/otf
+	AddOutputFilterByType DEFLATE font/ttf
+	AddOutputFilterByType DEFLATE image/svg+xml
+	AddOutputFilterByType DEFLATE image/x-icon
+	AddOutputFilterByType DEFLATE text/css
+	AddOutputFilterByType DEFLATE text/html
+	AddOutputFilterByType DEFLATE text/shtml
+	AddOutputFilterByType DEFLATE text/javascript
+	AddOutputFilterByType DEFLATE text/plain
+	AddOutputFilterByType DEFLATE text/xml
+</IfModule>
+# mod_deflate aktivieren
+<IfModule mod_deflate.c>
+AddOutputFilterByType DEFLATE text/plain
+AddOutputFilterByType DEFLATE text/html
+AddOutputFilterByType DEFLATE text/xml
+AddOutputFilterByType DEFLATE text/css
+AddOutputFilterByType DEFLATE text/vtt 
+AddOutputFilterByType DEFLATE text/x-component
+AddOutputFilterByType DEFLATE application/xml
+AddOutputFilterByType DEFLATE application/xhtml+xml
+AddOutputFilterByType DEFLATE application/rss+xml
+AddOutputFilterByType DEFLATE application/js
+AddOutputFilterByType DEFLATE application/javascript
+AddOutputFilterByType DEFLATE application/x-javascript
+AddOutputFilterByType DEFLATE application/x-httpd-php
+AddOutputFilterByType DEFLATE application/x-httpd-fastphp
+AddOutputFilterByType DEFLATE application/atom+xml 
+AddOutputFilterByType DEFLATE application/json
+AddOutputFilterByType DEFLATE application/ld+json 
+AddOutputFilterByType DEFLATE application/vnd.ms-fontobject 
+AddOutputFilterByType DEFLATE application/x-font-ttf
+AddOutputFilterByType DEFLATE application/font-woff2
+AddOutputFilterByType DEFLATE application/x-font-woff
+AddOutputFilterByType DEFLATE application/x-web-app-manifest+json font/woff
+AddOutputFilterByType DEFLATE font/woff 
+AddOutputFilterByType DEFLATE font/opentype
+AddOutputFilterByType DEFLATE image/svg+xml
+AddOutputFilterByType DEFLATE image/x-icon 
+</IfModule>
+
+############################################ FEHLERCODES HTTP ############################################
+
+# Client Fehler (400-151)
+ErrorDocument 400 /fehler/index.php?id=400&short_message=Ungültige%20Anfrage&long_message=Die%20Anfrage%20konnte%20aufgrund%20ungültiger%20Syntax%20nicht%20verstanden%20werden.%20Bitte%20überprüfen%20Sie%20Ihre%20Anfrage%20und%20versuchen%20Sie%20es%20erneut.
+ErrorDocument 401 /fehler/index.php?id=401&short_message=Zugriff%20verweigert&long_message=Der%20Zugriff%20auf%20die%20angeforderte%20Ressource%20wurde%20verweigert.%20Bitte%20überprüfen%20Sie%20Ihre%20Zugangsdaten%20und%20versuchen%20Sie%20es%20erneut.
+ErrorDocument 402 /fehler/index.php?id=402&short_message=Zahlung%20erforderlich&long_message=Die%20Anfrage%20kann%20nicht%20bearbeitet%20werden,%20da%20die%20Zahlung%20erforderlich%20ist.%20Bitte%20überprüfen%20Sie%20Ihre%20Zahlungsinformationen.
+ErrorDocument 403 /fehler/index.php?id=403&short_message=Verboten&long_message=Sie%20haben%20nicht%20die%20notwendigen%20Berechtigungen,%20um%20auf%20die%20Ressource%20zuzugreifen.%20Bitte%20überprüfen%20Sie%20Ihre%20Berechtigungen.
+ErrorDocument 404 /fehler/index.php?id=404&short_message=Nicht%20gefunden&long_message=Die%20angeforderte%20Seite%20konnte%20nicht%20gefunden%20werden.%20Bitte%20überprüfen%20Sie%20die%20URL%20auf%20Tippfehler%20oder%20starten%20Sie%20eine%20neue%20Anfrage.
+ErrorDocument 405 /fehler/index.php?id=405&short_message=Methode%20nicht%20erlaubt&long_message=Die%20angeforderte%20Methode%20ist%20für%20die%20angegebene%20Ressource%20nicht%20erlaubt.%20Bitte%20überprüfen%20Sie%20die%20Methode%20und%20versuchen%20Sie%20es%20erneut.
+ErrorDocument 406 /fehler/index.php?id=406&short_message=Nicht%20akzeptabel&long_message=Die%20angeforderte%20Ressource%20ist%20nicht%20in%20der%20Lage,%20die%20Akzept-Header%20der%20Anfrage%20zu%20erfüllen.%20Bitte%20überprüfen%20Sie%20Ihre%20Anfrage.
+ErrorDocument 407 /fehler/index.php?id=407&short_message=Proxy-Authentifizierung%20erforderlich&long_message=Die%20Anfrage%20erfordert%20eine%20Proxy-Authentifizierung.%20Bitte%20überprüfen%20Sie%20Ihre%20Proxy-Einstellungen.
+ErrorDocument 408 /fehler/index.php?id=408&short_message=Zeitüberschreitung%20bei%20der%20Anforderung&long_message=Die%20Server-Zeitüberschreitung%20wurde%20während%20der%20Anfrage%20überschritten.%20Bitte%20versuchen%20Sie%20es%20erneut.
+ErrorDocument 409 /fehler/index.php?id=409&short_message=Konflikt&long_message=Die%20Anfrage%20konnte%20nicht%20abgeschlossen%20werden,%20aufgrund%20eines%20Konflikts%20mit%20dem%20aktuellen%20Zustand%20der%20Ressource.
+ErrorDocument 410 /fehler/index.php?id=410&short_message=Gelöscht&long_message=Die%20angeforderte%20Ressource%20wurde%20dauerhaft%20gelöscht.%20Bitte%20überprüfen%20Sie%20die%20URL%20und%20versuchen%20Sie%20es%20erneut.
+ErrorDocument 411 /fehler/index.php?id=411&short_message=Länge%20erforderlich&long_message=Die%20Anfrage%20kann%20nicht%20bearbeitet%20werden,%20da%20die%20Länge%20der%20Anfrage%20nicht%20angegeben%20wurde.%20Bitte%20überprüfen%20Sie%20Ihre%20Anfrage.
+ErrorDocument 412 /fehler/index.php?id=412&short_message=Vorbedingung%20fehlgeschlagen&long_message=Eine%20oder%20mehrere%20Bedingungen%20in%20der%20Anfrage%20konnten%20nicht%20erfüllt%20werden.%20Bitte%20überprüfen%20Sie%20Ihre%20Anfrage.
+ErrorDocument 413 /fehler/index.php?id=413&short_message=Anforderung%20Entity%20zu%20groß&long_message=Die%20Anfrage%20ist%20zu%20groß,%20um%20vom%20Server%20verarbeitet%20zu%20werden.%20Bitte%20reduzieren%20Sie%20die%20Größe%20Ihrer%20Anfrage.
+ErrorDocument 414 /fehler/index.php?id=414&short_message=URI%20zu%20lang&long_message=Die%20URI%20der%20Anfrage%20ist%20länger%20als%20der%20Server%20interpretieren%20kann.
+ErrorDocument 415 /fehler/index.php?id=415&short_message=Nicht%20unterstützter%20Medientyp&long_message=Die%20Anfrage%20hat%20einen%20Medientyp%20angegeben,%20der%20vom%20Server%20oder%20der%20Ressource%20nicht%20unterstützt%20wird.%20Bitte%20überprüfen%20Sie%20Ihre%20Anfrage.
+ErrorDocument 416 /fehler/index.php?id=416&short_message=Angeforderter%20Bereich%20nicht%20erfüllbar&long_message=Der%20Client%20hat%20einen%20Bereich%20der%20Ressource%20angefordert,%20der%20nicht%20geliefert%20werden%20kann.%20Bitte%20überprüfen%20Sie%20Ihre%20Anfrage.
+ErrorDocument 417 /fehler/index.php?id=417&short_message=Erwartung%20gescheitert&long_message=Die%20Anfrage%20konnte%20nicht%20erfüllt%20werden,%20da%20die%20im%20Expect%20Headerfeld%20angegebene%20Erwartung%20nicht%20erfüllt%20werden%20kann.%20Bitte%20überprüfen%20Sie%20Ihre%20Anfrage.
+ErrorDocument 421 /fehler/index.php?id=421&short_message=Falsche%20Anfrage&long_message=Die%20Anfrage%20wurde%20an%20eine%20falsche%20oder%20unzulässige%20Ressource%20gesendet.
+ErrorDocument 422 /fehler/index.php?id=422&short_message=Unverarbeitbare%20Entität&long_message=Die%20Anfrage%20war%20gültig,%20aber%20der%20Server%20kann%20sie%20nicht%20verarbeiten.%20Dies%20ist%20oft%20der%20Fall,%20wenn%20die%20Anfrage%20selbst%20in%20irgendeiner%20Weise%20fehlerhaft%20ist.
+ErrorDocument 423 /fehler/index.php?id=423&short_message=Gesperrt&long_message=Die%20angeforderte%20Ressource%20ist%20gesperrt.%20Die%20Anfrage%20wurde%20nicht%20ausgeführt.
+ErrorDocument 424 /fehler/index.php?id=424&short_message=Fehlgeschlagene%20Abhängigkeit&long_message=Die%20Anfrage%20konnte%20aufgrund%20einer%20fehlgeschlagenen%20Abhängigkeit%20nicht%20ausgeführt%20werden.
+
+#ErrorDocument 425 /fehler/index.php?id=425&short_message=Nicht%20in%20der%20Liste&long_message=Der%20Server%20unterstützt%20die%20Funktion%20„Early%20Data“%20nicht.
+ErrorDocument 426 /fehler/index.php?id=426&short_message=Aktualisierung%20erforderlich&long_message=Der%20Client%20sollte%20auf%20eine%20neuere%20Version%20wechseln.
+ErrorDocument 428 /fehler/index.php?id=428&short_message=Vorbedingung%20erforderlich&long_message=Der%20Server%20erfordert%20dass%20die%20Anfrage%20bedingt%20ist.
+ErrorDocument 429 /fehler/index.php?id=429&short_message=Zu%20viele%20Anfragen&long_message=Der%20Client%20hat%20zu%20viele%20Anfragen%20in%20einem%20bestimmten%20Zeitraum%20gesendet.
+ErrorDocument 431 /fehler/index.php?id=431&short_message=Anforderungsheaderfelder%20zu%20groß&long_message=Die%20Anfrage%20kann%20nicht%20bearbeitet%20werden,%20da%20ein%20oder%20mehrere%20Headerfelder%20zu%20groß%20sind.
+ErrorDocument 451 /fehler/index.php?id=451&short_message=Aus%20rechtlichen%20Gründen%20nicht%20verfügbar&long_message=Die%20angeforderte%20Ressource%20ist%20aus%20rechtlichen%20Gründen%20nicht%20verfügbar.
+
+# Server Fehler (500-511)
+ErrorDocument 500 /fehler/index.php?id=500&short_message=Interner%20Serverfehler&long_message=Ein%20unerwarteter%20Zustand%20wurde%20vom%20Server%20erkannt,%20der%20die%20Anfrage%20nicht%20ausführen%20kann.
+ErrorDocument 501 /fehler/index.php?id=501&short_message=Nicht%20implementiert&long_message=Der%20Server%20unterstützt%20die%20Funktionalität%20erforderlich%20zur%20Erfüllung%20der%20Anfrage%20nicht.
+ErrorDocument 502 /fehler/index.php?id=502&short_message=Bad%20Gateway&long_message=Der%20Server%20hat%20eine%20ungültige%20Antwort%20von%20einem%20Upstream-Server%20erhalten.
+ErrorDocument 503 /fehler/index.php?id=503&short_message=Service%20nicht%20verfügbar&long_message=Der%20Server%20ist%20derzeit%20nicht%20verfügbar%20(aufgrund%20einer%20Überlastung%20oder%20Wartungsarbeiten).
+ErrorDocument 504 /fehler/index.php?id=504&short_message=Gateway%20Zeitüberschreitung&long_message=Der%20Server%20hat%20eine%20Zeitüberschreitung%20beim%20Warten%20auf%20eine%20Antwort%20von%20einem%20anderen%20Server%20oder%20Dienst.
+ErrorDocument 505 /fehler/index.php?id=505&short_message=HTTP-Version%20nicht%20unterstützt&long_message=Die%20HTTP-Version%20in%20der%20Anfrage%20wird%20vom%20Server%20nicht%20unterstützt.
+ErrorDocument 506 /fehler/index.php?id=506&short_message=Variant%20Also%20Negotiates&long_message=Interne%20Konfigurationsfehler%20des%20Servers.
+ErrorDocument 507 /fehler/index.php?id=507&short_message=Unzureichender%20Speicherplatz&long_message=Der%20Server%20kann%20die%20Anfrage%20nicht%20erfüllen,%20da%20er%20nicht%20über%20ausreichend%20Speicherplatz%20verfügt.
+ErrorDocument 508 /fehler/index.php?id=508&short_message=Schleife%20erkannt&long_message=Der%20Server%20hat%20eine%20unendliche%20Schleife%20erkannt,%20während%20er%20die%20Anfrage%20bearbeitet.
+ErrorDocument 510 /fehler/index.php?id=510&short_message=Nicht%20erweitert&long_message=Weitere%20Erweiterungen%20für%20die%20Anfrage%20sind%20erforderlich.
+ErrorDocument 511 /fehler/index.php?id=511&short_message=Netzwerkauthentifizierung%20erforderlich&long_message=Der%20Client%20muss%20sich%20authentifizieren,%20um%20Netzwerkzugriff%20zu%20erhalten.
