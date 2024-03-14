@@ -3,7 +3,8 @@
 				<div class="text-center">
 					<p class="h1 p-4 p-md-3">Stellenangebote</p><br>
 					<!--Baumpfleger/kletterer gesucht-->
-					<div class="card mb-3">
+					<p> Zurzeit werden keine Stellen ageboten. </p>
+					<!--div class="card mb-3">
 						<div class="row g-0">
 							<div class="col-md-4">
 								<img src="../resource/bewerbung.jpg" class="img-fluid rounded-start" alt="Mitarbeiter klettert auf Baum">
@@ -17,5 +18,5 @@
 								</div>
 							</div>
 						</div>
-				</div>
+				    </div-->
 		</section>

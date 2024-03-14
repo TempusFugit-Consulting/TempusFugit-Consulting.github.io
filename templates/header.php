@@ -16,15 +16,14 @@
 				<ul class="navbar-nav ms-auto align-items-center fs-3">
 					<li class="nav-item dropdown pt-4 pt-xl-0 px-xl-2">
 						<a
-							class="nav-link dropdown-toggle"
+							class="nav-link"
 							id="navbarDropdownMenuLink"
 							role="button"
-							data-mdb-toggle="dropdown"
 							aria-expanded="false"
 						>
 							Dienstleistungen
 						</a>
-						<ul class="dropdown-menu fs-5" aria-labelledby="navbarDropdownMenuLink">
+						<!--ul class="dropdown-menu fs-5" aria-labelledby="navbarDropdownMenuLink">
 							<li>
 								<a class="dropdown-item" href="/baumservice/">Baumservice</a>
 							</li>
@@ -43,7 +42,7 @@
 							<li>
 								<a class="dropdown-item" href="/sonstige/">Sonstige Leistungen</a>
 							</li>
-						</ul>
+						</ul-->
 					</li>
 					<li class="nav-item pt-4 pt-xl-0 px-xl-2">
 						<a class="nav-link" href="/#Galerie">Galerie</a>

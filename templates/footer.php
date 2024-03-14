@@ -8,12 +8,11 @@
             </div>
             <div class="vr d-none d-md-block"></div>
             <div class="mt-4 mt-md-0 ps-2 ps-xl-5" >
-                <p><strong>Treske Baum- & Landschaftspflege GmbH</strong><br>
-                Hauptstraße 58<br>
-                08112 Wilkau-Haßlau<br><br>
-                Festnetz: <a href="tel:+4937602762873">+49(0) 37602 7628 73</a><br>
-                Mobil: <a href="tel:+4917624261311">+49(0) 176 2426 1311</a><br>
-                E-Mail: <a href="mailto:info@baumpflege-treske.de?subject=Anfrage">info@baumpflege-treske.de</a><br>
+                <p><strong>TempusFugit Consulting</strong><br>
+                Adresse<br><br>
+                Festnetz: <a href="tel:+4937602762873">Telefonnummer</a><br>
+                Mobil: <a href="tel:+4917624261311">vllt. Mobil</a><br>
+                E-Mail: <a href="mailto:info@baumpflege-treske.de?subject=Anfrage">Email</a><br>
                 </p>
                 <div>
                     <a href="/impressum/"><strong>Impressum</strong></a>
