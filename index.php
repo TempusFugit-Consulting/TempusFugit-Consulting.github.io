@@ -5,7 +5,7 @@
 	$title = "TempusFugit Consulting";
 	$description = "Ihr Kompententer Partner fuer Consulting. Wir bieten Ihnen eine Vielzahl von Dienstleistungen an. Von der Beratung bis zur Umsetzung.";
 	$keywords = "Consulting, Beratung, Umsetzung, Dienstleistungen, TempusFugit";
-	include "templates/head.php";
+	include "functions/head.php";
 	?>
 	<!--Galerie-->
 	<link rel="stylesheet" href="photoswipe.css">
@@ -13,7 +13,7 @@
 </head>
 <body>
 	<?php
-	include "templates/header.php";
+	include "functions/header.php";
 	?>
     <main>
 		<section>
@@ -78,7 +78,7 @@
 							</div>
 						</div>
 						<!--Message of the Day-->
-						div class="d-inline-flex p-2 alert alert-warning fs-2 px-3 m-3">
+						<div class="d-inline-flex p-2 alert alert-warning fs-2 px-3 m-3">
 							<i class="bi bi-exclamation-triangle-fill me-3"></i>Diese Website ist noch im Aufbau
 						</div>
 					</div>
@@ -86,24 +86,24 @@
 			</div>
 		</section>
 		<?php
-		include "templates/stelle.php";
+		include "functions/stelle.php";
 		?>
 		<!--Dienstleistungen-->
         <section id="Dienstleistungen" class="py-5">
 		<?php
-		include "templates/dienstleistungen.php";
+		include "functions/dienstleistungen.php";
 		?>
 		</section>	
 		<!--Team-->
 		<section id="Team" class="py-5">
 		<?php
-		include "templates/team.php";
+		include "functions/team.php";
 		?>
 		</section>	
 		<!--Galerie-->
 		<section id="Galerie" class="shadow-6-strong">
 		<?php
-		include "templates/gallery.php";
+		include "functions/gallery.php";
 		?>
 		</section>
 
@@ -113,7 +113,7 @@
         </section>
     </main>
 	<?php 
-	include "templates/footer.php";
+	include "functions/footer.php";
 	?>
 <!-- Google Maps API - Async script executes immediately and must be after any DOM elements used in callback. -->
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCwv1HA-dZLfigSem636L0cS-n9rBHsGOU&callback=initMap&v=weekly&libraries=places" async></script>
