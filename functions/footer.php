@@ -36,7 +36,7 @@ function toggleActive() {
     {
     "@context" : "http://schema.org",
     "@type" : "LocalBusiness",
-    "name" : "Treske Baum- & Landschaftspflege GmbH",
+    "name" : "TempusFugit Consulting",
     "image" : "https://baumpflege-treske.de/resource/logo_os.png",
     "telephone" : "+49(0)176 2426 1311",
     "email" : "info@baum-treske.de",

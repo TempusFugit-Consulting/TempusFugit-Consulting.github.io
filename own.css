@@ -12,11 +12,11 @@
 
 .dropdown-item.active{
 	background-color: unset !important;
-	color: #FF942E !important;
+	color: #E8E8AC !important;
 }
 
 .dropdown-item:hover{
-	color: #FF942E !important;
+	color: #E8E8AC !important;
 	background-color:rgba(4,32,24,0.40)!important;
 }
 
@@ -32,7 +32,7 @@
 }
 
 .navbar .nav-link:hover {
-	color: #FF942E !important;
+	color: #E8E8AC !important;
 }
 
 .btn {
@@ -58,7 +58,7 @@
 }
 
 #hero-text .btn-link:hover > a{
-	color: #FF942E !important;
+	color: #E8E8AC !important;
 }
 
 #hero-text .btn-link:active{
@@ -66,7 +66,7 @@
 }
 
 #hero-text .dropdown .btn:hover{
-		color: #FF942E !important;
+		color: #E8E8AC !important;
 		background-color: rgba(4,32,24,0.6) !important;
 		backdrop-filter: blur(4px);
 }
@@ -77,7 +77,7 @@
 }
 
 #hero-text .dropdown .dropdown-item:hover > a{
-	color: #FF942E !important;
+	color: #E8E8AC !important;
 }
 
 
@@ -86,9 +86,9 @@
 }
 
 .h1{
-	color: #194538 !important;
+	color: #40A78D !important;
 	text-decoration-line: underline;
-	text-decoration-color: #FF942E;
+	text-decoration-color: #E8E8AC;
 	text-decoration-thickness: 8px;
 	text-underline-offset: 1rem;
 }
@@ -98,13 +98,13 @@
 }
 
 #pills-tab .nav-link:hover {
-	color: #FF942E !important;
+	color: #E8E8AC !important;
 	background-color: #446058 !important;
 }
 #pills-tab .nav-link.active{
-    color: #FF942E !important;
+    color: #E8E8AC !important;
     background-color: #324741 !important;
-	border-color: #FF942E !important;
+	border-color: #E8E8AC !important;
 }
 
 .mask h2{
@@ -120,7 +120,7 @@
 }
 
 .hover-overlay .mask h2{
-	color: #FF942E !important;
+	color: #E8E8AC !important;
 }
 
 .card{
@@ -135,7 +135,7 @@
 	color: white;
 }
 .card-title{
-	color: #FF942E !important;
+	color: #E8E8AC !important;
 }
 
 .card-footer{
@@ -189,7 +189,7 @@ footer img{
 }
 
 .gruen{
-	color: #194538 !important;
+	color: #40A78D !important;
 }
 
 .mobile-menu-button{
