@@ -189,7 +189,7 @@
                     </div>
 					<div class="vr vr-blurry d-none d-md-block"></div>
                     <div class="d-flex flex-row justify-content-center align-items-center mt-5 mt-md-0 ps-md-5">
-                        <div><img src="resource/google.svg" alt="Google Logo" width="80"></div>
+                        <div><img src="src/google.svg" alt="Google Logo" width="80"></div>
                         <div id="googleRatingDiv" class="d-none px-3"></div>
                     </div>
 				</div>

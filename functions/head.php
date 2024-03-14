@@ -50,8 +50,8 @@
 <!-- -->
 <meta name="description" content="<?php echo $description; ?>">
 <meta name="keywords" content="<?php echo $keywords; ?>">
-<meta name="author" content="David Treske">
-<link rel="stylesheet" href="/style.css" type="text/css">
+<meta name="author" content="JosuaDev">
+<link rel="stylesheet" href="style.css" type="text/css">
 <!--Bootstrap Icons-->
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
 <!--Google Font-->
