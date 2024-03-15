@@ -20,7 +20,7 @@
 			<!--Hero-->
 			<div id="hero" class="bg-image vh-100 shadow-6-strong">
 				<video autoplay loop muted playsinline webkit-playsinline poster="resource/titel.jpg" >
-				<source class="h-100" src="resource/hero.mp4" type="video/mp4" />
+				<source class="h-100" src="src/to/video" type="video/mp4" />
 				</video>
 				<div class="mask" style="background-color: rgba(0, 0, 0, 0.15)">
 					<div id="hero-text" class="px-2 px-md-4 py-5 text-center text-white">
