@@ -88,6 +88,12 @@
 		<?php
 		include "functions/stelle.php";
 		?>
+		<!--Über uns-->
+        <section id="About Us" class="py-5">
+		<?php
+		include "functions/about-us.php";
+		?>
+		</section>
 		<!--Dienstleistungen-->
         <section id="Dienstleistungen" class="py-5">
 		<?php
