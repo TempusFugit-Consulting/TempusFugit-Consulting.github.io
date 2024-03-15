@@ -10,9 +10,9 @@
     </div>
 <br>
 	<div class="row">
-		<div class="col-lg-4 offset-lg-2">
+		<div class="col-lg-4 offset-lg-2 mt-3">
 			<div class="card blur-effect">
-				<img src="path/to/melanie.jpg" class="card-img-top" alt="Melanie - Inhaber">
+				<img src="/src/images/team/template-female.jpg" class="card-img-top" alt="Melanie - Bild"  >
 				<div class="card-body text-center">
 					<h5 class="card-title">Melanie</h5>
 					<p class="card-text text-muted">Inhaberin</p>
@@ -21,9 +21,9 @@
 				</div>
 			</div>
 		</div>
-		<div class="col-lg-4">
+		<div class="col-lg-4 mt-3">
 			<div class="card blur-effect">
-				<img src="path/to/josua.jpg" class="card-img-top" alt="Josua - IT">
+				<img src="/src/images/team/template-male.jpg" class="card-img-top" alt="Josua - Bild">
 				<div class="card-body text-center">
 					<h5 class="card-title">Josua</h5>
 					<p class="card-text text-muted">Entwickler</p>

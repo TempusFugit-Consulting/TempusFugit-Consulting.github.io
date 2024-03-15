@@ -19,10 +19,8 @@
 		<section>
 			<!--Hero-->
 			<div id="hero" class="bg-image vh-100 shadow-6-strong">
-				<video autoplay loop muted playsinline webkit-playsinline poster="rsrc/to/thumbnail" >
-				<source class="h-100" src="src/to/video" type="video/mp4" />
-				</video>
-				<div class="mask" style="background-color: rgba(0, 0, 0, 0.15)">
+				<img src="/src/images/template.jpg" alt="header-image" style="height: 100%; width: 100%; object-fit: cover;">
+				<div class="mask" style="background-color: rgba(0, 0, 0, 0.5)">
 					<div id="hero-text" class="px-2 px-md-4 py-5 text-center text-white">
 						<h1 class="fw-bold">TempusFugit</h1>
 						<p class="fw-bold fs-4"><!--Consulting Partner-->Ihr kompententer Partner für Consulting.</p>
