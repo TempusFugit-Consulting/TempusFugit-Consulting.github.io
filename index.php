@@ -19,7 +19,7 @@
 		<section>
 			<!--Hero-->
 			<div id="hero" class="bg-image vh-100 shadow-6-strong">
-				<video autoplay loop muted playsinline webkit-playsinline poster="resource/titel.jpg" >
+				<video autoplay loop muted playsinline webkit-playsinline poster="rsrc/to/thumbnail" >
 				<source class="h-100" src="src/to/video" type="video/mp4" />
 				</video>
 				<div class="mask" style="background-color: rgba(0, 0, 0, 0.15)">
