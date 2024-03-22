@@ -1,7 +1,9 @@
 
 
-$primary: #40A78D;
-$secondary: #E8E8AC;
+$primary: #ffc8b0;
+$secondary: #e8e0d3;
+$third: #9fd1c1;
+$fourth: #528167;
 
 
 html {
@@ -28,7 +30,7 @@ html {
 
 //Dropdown
 
-$dropdown-bg: #1f5145;
+$dropdown-bg: $fourth;
 .dropdown:hover>.dropdown-menu{
     display: block;
 }
