@@ -3,7 +3,7 @@
 	<nav class="navbar navbar-expand-xl navbar-dark fixed-top" >
 		<div class="container-xxl">
 			<a class="navbar-brand nav-link px-4 py-xl-2" href="/">
-				<img src="/resource/logo_os.png" alt="Firmenlogo">
+				<img src="../src/logo_os.png" alt="Firmenlogo">
 			</a>
 			<div class="mobile-menu-button navbar-toggler" id="burger" onclick="toggleActive()" data-mdb-toggle="collapse" data-mdb-target="#navbarmobile"
 	aria-controls="navbarmobile" aria-expanded="false" aria-label="Toggle navigation">   

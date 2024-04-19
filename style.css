@@ -19,7 +19,7 @@ html {
 }
 
 .navbar .nav-link:hover {
-	color: var(--mdb-secondary);
+	color: var(--secondary);
 }
 
 .dropdown:hover > .dropdown-menu {
@@ -41,7 +41,7 @@ html {
 }
 
 .dropdown-item:hover{
-	color: var(--mdb-secondary) !important;
+	color: var(--secondary) !important;
 	background-color:rgba(4,32,24,0.40)!important;
 }
 
@@ -66,7 +66,7 @@ html {
 }
 
 #hero-text .btn-link:hover > a{
-	color: var(--mdb-secondary) !important;
+	color: var(--secondary) !important;
 }
 
 #hero-text .btn-link:active{
@@ -74,7 +74,7 @@ html {
 }
 
 #hero-text .dropdown .btn:hover{
-		color: var(--mdb-secondary) !important;
+		color: var(--secondary) !important;
 		background-color: rgba(4,32,24,0.6);
 		backdrop-filter: blur(4px);
 }
@@ -85,7 +85,11 @@ html {
 }
 
 #hero-text .dropdown .dropdown-item:hover > a{
-	color: var(--mdb-secondary);
+	color: var(--secondary);
+}
+
+.bg-default{
+  background-color: #FBFDFC;
 }
 
 #Dienstleistungen{
@@ -97,13 +101,13 @@ html {
 }
 
 #pills-tab .nav-link:hover {
-	color: var(--mdb-secondary) !important;
+	color: var(--secondary) !important;
 	background-color: #446058 !important;
 }
 #pills-tab .nav-link.active{
-    color: var(--mdb-secondary) !important;
+    color: var(--secondary) !important;
     background-color: #324741 !important;
-	border-color: var(--mdb-secondary) !important;
+	border-color: var(--secondary) !important;
 }
 
 .mask h2{
@@ -119,7 +123,7 @@ html {
 }
 
 .hover-overlay .mask h2{
-	color: var(--mdb-secondary);
+	color: var(--secondary);
 }
 
 #fll{
@@ -141,14 +145,15 @@ html {
 }
 
 footer{
+  text-decoration: none;
 	/* fallback for old browsers */
-	background: #2b7463;
+	background: #528167;
 
 	/* Chrome 10-25, Safari 5.1-6 */
-	background: -webkit-linear-gradient(to top, rgba(43, 116, 99, 1), rgba(43, 116, 99, 1));
+	background: -webkit-linear-gradient(to top, rgba(82, 129, 103, 1), rgba(82, 129, 103, 1));
 
 	/* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-	background: linear-gradient(to top, rgba(43, 116, 99, 1), rgba(43, 116, 99, 1));
+	background: linear-gradient(to top, rgba(82, 129, 103, 1), rgba(82, 129, 103, 1));
     color: #CFCFCF;
 }
 footer a{
@@ -164,10 +169,14 @@ footer img{
 }
 
 .gruen{
-color: var(--mdb-primary);
+color: var(--fourth);
 }
 
 :root {
+  --primary: #ffc8b0;
+  --secondary: #e8e0d3;
+  --third: #9fd1c1;
+  --fourth: #528167;
   --mdb-red: #f44336;
   --mdb-pink: #e91e63;
   --mdb-purple: #9c27b0;
@@ -192,8 +201,8 @@ color: var(--mdb-primary);
   --mdb-gray-700: #616161;
   --mdb-gray-800: #4f4f4f;
   --mdb-gray-900: #262626;
-  --mdb-primary: #40A78D;
-  --mdb-secondary: #E8E8AC;
+  --mdb-primary: #ffc8b0;
+  --mdb-secondary: #e8e0d3;
   --mdb-success: #14a44d;
   --mdb-danger: #c63850;
   --mdb-warning: #f5cd61;
@@ -232,7 +241,7 @@ color: var(--mdb-primary);
   --mdb-border-radius-2xl: 2rem;
   --mdb-border-radius-pill: 50rem;
   --mdb-link-color: #40A78D;
-  --mdb-link-hover-color: var(--mdb-secondary);
+  --mdb-link-hover-color: var(--secondary);
   --mdb-code-color: #e91e63;
   --mdb-highlight-bg: #fff9c4;
 }
@@ -278,9 +287,9 @@ h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
 }
 
 .h1{
-	color: var(--mdb-primary);
+	color: var(--primary);
 	text-decoration-line: underline;
-	text-decoration-color: var(--mdb-secondary);
+	text-decoration-color: var(--secondary);
 	text-decoration-thickness: 8px;
 	text-underline-offset: 1rem;
 }
@@ -4351,7 +4360,7 @@ textarea.form-control-lg {
   --mdb-card-cap-bg: rgba(255, 255, 255, 0);
   --mdb-card-cap-color: ;
   --mdb-card-height: ;
-  --mdb-card-color: ;
+  --mdb-card-color: var(--fourth);
   --mdb-card-bg: #fff;
   --mdb-card-img-overlay-padding: 1.5rem;
   --mdb-card-group-margin: 0.75rem;
@@ -4366,13 +4375,7 @@ textarea.form-control-lg {
   border: var(--mdb-card-border-width) solid var(--mdb-card-border-color);
   border-radius: var(--mdb-card-border-radius);
   box-shadow: var(--mdb-card-box-shadow);
-  background: #305248;
-
-	/* Chrome 10-25, Safari 5.1-6 */
-	background: -webkit-linear-gradient(to top, rgba(48, 82, 72, 1), rgba(56,104,90,1));
-
-	/* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-	background: linear-gradient(to top, rgba(50,71,65,1.00), rgba(55,81,73,1.00));
+  background: #ffffff;
 	color: white;
 }
 .card > hr {
@@ -4387,11 +4390,14 @@ textarea.form-control-lg {
   border-top-width: 0;
   border-top-left-radius: var(--mdb-card-inner-border-radius);
   border-top-right-radius: var(--mdb-card-inner-border-radius);
+  box-shadow: var(--mdb-card-box-shadow);
 }
 .card > .list-group:last-child {
   border-bottom-width: 0;
   border-bottom-right-radius: var(--mdb-card-inner-border-radius);
   border-bottom-left-radius: var(--mdb-card-inner-border-radius);
+  
+  box-shadow: var(--mdb-card-box-shadow);
 }
 .card > .card-header + .list-group,
 .card > .list-group + .card-footer {
@@ -4406,7 +4412,7 @@ textarea.form-control-lg {
 
 .card-title {
   margin-bottom: var(--mdb-card-title-spacer-y);
-  color: var(--mdb-secondary);
+  color: var(--secondary);
 }
 
 .card-subtitle {
@@ -7552,12 +7558,12 @@ textarea.form-control-lg {
 
 .border-primary {
   --mdb-border-opacity: 1;
-  border-color: rgba(var(--mdb-primary-rgb), var(--mdb-border-opacity)) !important;
+  border-color: rgba(var(--primary-rgb), var(--mdb-border-opacity)) !important;
 }
 
 .border-secondary {
   --mdb-border-opacity: 1;
-  border-color: rgba(var(--mdb-secondary-rgb), var(--mdb-border-opacity)) !important;
+  border-color: rgba(var(--secondary), var(--mdb-border-opacity)) !important;
 }
 
 .border-success {
@@ -8605,7 +8611,7 @@ textarea.form-control-lg {
 
 .text-secondary {
   --mdb-text-opacity: 1;
-  color: rgba(var(--mdb-secondary-rgb), var(--mdb-text-opacity)) !important;
+  color: rgba(var(--mdb-secondary), var(--mdb-text-opacity)) !important;
 }
 
 .text-success {
@@ -8691,12 +8697,16 @@ textarea.form-control-lg {
 
 .bg-primary {
   --mdb-bg-opacity: 1;
-  background-color: rgba(var(--mdb-primary-rgb), var(--mdb-bg-opacity)) !important;
+  background-color: rgba(var(--primary), var(--mdb-bg-opacity)) !important;
+}
+
+.feature {
+  background-color: var(--third);
 }
 
 .bg-secondary {
   --mdb-bg-opacity: 1;
-  background-color: rgba(var(--mdb-secondary-rgb), var(--mdb-bg-opacity)) !important;
+  background-color: rgba(var(--secondary), var(--mdb-bg-opacity)) !important;
 }
 
 .bg-success {
@@ -20411,6 +20421,15 @@ select.select-initialized {
 }
 .navbar-collapse.open{
   height: 100vh;
+}
+
+.white-color {
+  color: #fff;
+}
+
+.bg-white {
+  background: #FBFDFC;
+  background-color: #FBFDFC;
 }
 
 @media (max-width: 767.98px) {

@@ -49,3 +49,9 @@ function toggleActive() {
         "url" : "https://baumpflege-treske.de/"
     }
 </script>
+<!-- Google Maps API - Async script executes immediately and must be after any DOM elements used in callback. -->
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCwv1HA-dZLfigSem636L0cS-n9rBHsGOU&callback=initMap&v=weekly&libraries=places" async></script>
+<script src="../scr/scripts/gmapssettings.js"></script>
+<script src="../src/scripts/photoswipe.js"></script>
+<script src="../photoswipe.min.js"></script>
+<script src="../photoswipe-ui-default.min.js"></script>

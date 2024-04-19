@@ -5,32 +5,36 @@
     }
 </style>
 <div class="container-xxl">
-	<div class="text-center">
-        <p class="h1 p-4 p-md-3">Team</p>
+    <div class="container">
+        <div class="mx-auto text-center wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
+            <div class="d-inline-block border rounded-pill text-primary px-4 mb-3">Our Team</div>
+            <h2 class="mb-5">Meet Our Team Members</h2>
+        </div>
+        <div class="row g-4">
+            <div class="col-lg-3 offset-lg-3 wow fadeInUp" data-wow-delay="0.1s">
+                <div class="team-item">
+                    <h5>Full Name</h5>
+                    <p class="mb-4">Designation</p>
+                    <img class="img-fluid rounded-circle w-100 mb-4" src="..\src\images\team\1.jpg" alt="">
+                    <div class="d-flex justify-content-center">
+                        <a class="btn btn-square text-primary bg-white m-1" href=""><i class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-square text-primary bg-white m-1" href=""><i class="fab fa-twitter"></i></a>
+                        <a class="btn btn-square text-primary bg-white m-1" href=""><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 wow fadeInUp" data-wow-delay="0.3s">
+                <div class="team-item">
+                    <h5>Full Name</h5>
+                    <p class="mb-4">Designation</p>
+                    <img class="img-fluid rounded-circle w-100 mb-4" src="..\src\images\team\2.jpg" alt="">
+                    <div class="d-flex justify-content-center">
+                        <a class="btn btn-square text-primary bg-white m-1" href=""><i class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-square text-primary bg-white m-1" href=""><i class="fab fa-twitter"></i></a>
+                        <a class="btn btn-square text-primary bg-white m-1" href=""><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-<br>
-	<div class="row">
-		<div class="col-lg-4 offset-lg-2 mt-3">
-			<div class="card blur-effect">
-				<img src="/src/images/team/template-female.jpg" class="card-img-top" alt="Melanie - Bild"  >
-				<div class="card-body text-center">
-					<h5 class="card-title">Melanie</h5>
-					<p class="card-text text-muted">Inhaberin</p>
-					<a href="#" class="btn btn-primary"><i class="fab fa-facebook-f">Social Media</i></a>
-					<a href="#" class="btn btn-primary"><i class="fab fa-twitter">Social Media</i></a>
-				</div>
-			</div>
-		</div>
-		<div class="col-lg-4 mt-3">
-			<div class="card blur-effect">
-				<img src="/src/images/team/template-male.jpg" class="card-img-top" alt="Josua - Bild">
-				<div class="card-body text-center">
-					<h5 class="card-title">Josua</h5>
-					<p class="card-text text-muted">Entwickler</p>
-					<a href="#" class="btn btn-primary"><i class="fab fa-facebook-f">Social Media</i></a>
-					<a href="#" class="btn btn-primary"><i class="fab fa-twitter">Social Media</i></a>
-				</div>
-			</div>
-		</div>
-	</div>
 </div>

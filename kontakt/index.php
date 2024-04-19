@@ -1,3 +1,4 @@
+
 <!doctype html>
 <html lang="de">
 <head>
@@ -5,12 +6,12 @@
 	$title = "Treske Baum- & Landschaftspflege - Kontakt";
 	$description = "Kontakt";
 	$keywords = "Kontakt, E-Mail, Anfrage";
-	include "../templates/head.php";
+	include "../functions/head.php";
 	?>
 </head>
 <body>
 	<?php
-	include "../templates/header.php";
+	include "../functions/header.php";
 	?>
 	<main>  
         <div class="container-xxl mx-auto margin120 pb-5">
@@ -61,7 +62,7 @@
 				<!--Postleitzahl-->
 				<div class="col-md-3 mb-4">
 					<div class="form-outline">
-						<input type="text" id="postal-code" name="postal-code" class="form-control" autocomplete="postal-code" required/>
+						<input type="number" id="postal-code" name="postal-code" class="form-control" autocomplete="postal-code"/>
 						<label class="form-label" for="postal-code">Postleitzahl</label>
 					</div>
 				</div>
@@ -72,40 +73,10 @@
 						<label class="form-label" for="address-level2">Ort</label>
 					</div>
 				</div>
-				<!--Auswahl-->
-				<div class="col-md-3 mb-4">
-					<select class="select" data-mdb-auto-select="true" required>
-					<option value="1">Allgemein</option>
-					<option value="2">Baumstumpffräsen</option>
-					</select>
-					<label class="form-label select-label">Anfrageart</label>
-				</div>
-
-				<!--Entfernung-->
-				<div class="entfernung form-outline" style="display: none;">
-					<h2>Stubbenfräsen</h2>
-					<span>
-						<strong>Wie weit ist es Fußläufig von der Zufahrtmöglichkeit bis zum Baumstumpf?</strong>
-					</span>
-					<div class="form-outline mt-2 mb-4">
-						<input type="number" id="entfernung" class="form-control" autocomplete="no" min="0" step="1" />
-						<label class="form-label" for="entfernung">Entfernung in Meter</label>
-					</div>
-				</div>
-				<!-- Gerätschaften -->
-				<div class="geraetschaften form-outline" style="display: none;">
-					<span>
-						<strong>Kommt man mit Gerätschaften von der letzen Zufahrt bis zum Baumstumpf?</strong> <br>
-						D.h. der Weg ist durchgehend mindestens 2m breit und keine Torpfosten o.ä. versperren den Weg.<br>
-					</span>
-					<div class="form-check form-check-inline mt-2 mb-4">
-					<input class="form-check-input" type="radio" name="weg" id="wegja" value="Ja"/>
-					<label class="form-check-label" for="wegja"> Ja </label>
-					</div>
-					<div class="form-check form-check-inline">
-					<input class="form-check-input" type="radio" name="weg" id="wegnein" value="Nein"/>
-					<label class="form-check-label" for="wegnein"> Nein </label>
-					</div>
+				<!--Betreff-->
+				<div class="form-outline mb-4">
+					<input type="text" id="subject" name="subject" class="form-control" required/>
+					<label class="form-label" for="subject">Betreff</label>
 				</div>
 				<!-- Nachricht -->
 				<div class="form-outline mb-4 mt-3">
@@ -124,7 +95,7 @@
         </div>
     </main>
 	<?php 
-	include "../templates/footer.php";
+	include "../functions/footer.php";
 	?>
     <!-- Script Anzeige Auswahl und anzeigen der bestimmten Felder aufgrund ausgewählter Auswahl -->
     <script>

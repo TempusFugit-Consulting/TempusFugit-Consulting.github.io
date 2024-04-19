@@ -5,12 +5,12 @@
 	$title = "Treske Baum- & Landschaftspflege - Kontakt";
 	$description = "Kontakt";
 	$keywords = "Kontakt, E-Mail, Anfrage";
-	include "../templates/head.php";
+	include "../functions/head.php";
 	?>
 </head>
 <body>
 	<?php
-	include "../templates/header.php";
+	include "../functions/header.php";
 	?>
 	<main>  
         <div class="container-xxl mx-auto margin120 pb-5">
@@ -25,7 +25,7 @@
 		</div>
 	</main>
 	<?php 
-	include "../templates/footer.php";
+	include "../functions/footer.php";
 	?>
 	<script>
         setTimeout(function(){
